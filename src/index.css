@@ -6,6 +6,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* 
+#22A699
+#F2BE22
+#F29727
+#F24C3D
+*/
 body {
   font-family: "Poppins", sans-serif;
+  /* background-color: #22a699; */
+  background-color: #d3e1e0;
+  height: 100vh;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
 }

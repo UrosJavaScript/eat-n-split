@@ -1,0 +1,15 @@
+.wrapper-friend-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.list-friend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* color: #f24c3d; */
+}
+.list-friend img {
+  border-radius: 50%;
+}
