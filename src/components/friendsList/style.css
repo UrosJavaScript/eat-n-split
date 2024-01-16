@@ -4,12 +4,34 @@
   flex-direction: column;
   gap: 40px;
 }
+.balance-greater-color {
+  color: #f24c3d;
+  font-weight: 700;
+}
+.balance-less-color {
+  color: #22a699;
+  font-weight: 700;
+}
 .list-friend {
   display: flex;
   align-items: center;
   gap: 20px;
-  /* color: #f24c3d; */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+.list-friend:hover {
+  background-color: #f0cd0a33;
 }
 .list-friend img {
   border-radius: 50%;
+}
+.list-friend .wrapper-description {
+  width: 100%;
+}
+.list-friend .name-friend {
+  letter-spacing: 2px;
+  font-weight: 400;
 }
