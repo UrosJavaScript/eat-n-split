@@ -1,8 +1,10 @@
 import { Button } from "../common/button";
 
-export const Friend = ({ friend }) => {
+export const Friend = ({ friend, onSelection, selectedFriend }) => {
+  const isSelected = selectedFriend?.id === friend.id;
+
   return (
-    <li className="list-friend">
+    <li className={`list-friend ${isSelected ? "selected" : ""}`}>
       <img src={friend.image} alt={friend.name} />
       <div className="wrapper-description">
         <h3 className="name-friend">{friend.name}</h3>
@@ -22,7 +24,9 @@ export const Friend = ({ friend }) => {
         {friend.balance === 0 && <p>You and {friend.name} are even.</p>}
       </div>
 
-      <Button>Select</Button>
+      <Button onClick={() => onSelection(friend)}>
+        {isSelected ? "Close" : "Select"}
+      </Button>
     </li>
   );
 };

@@ -1,10 +1,12 @@
 import { Button } from "../common/button";
 import "./style.css";
 
-export const FormSplitBill = () => {
+export const FormSplitBill = ({ selectedFriend }) => {
   return (
     <form className="form-split-bill">
-      <h2 className="form-split-bill-title">Split a bill with x</h2>
+      <h2 className="form-split-bill-title">
+        Split a bill with {selectedFriend.name}
+      </h2>
 
       <div className="wrapper-form">
         <label htmlFor="bill">💰 Bill value</label>
@@ -17,7 +19,7 @@ export const FormSplitBill = () => {
       </div>
 
       <div className="wrapper-form">
-        <label htmlFor="all-expense">👭 X's expense</label>
+        <label htmlFor="all-expense">👭 {selectedFriend.name}'s expense</label>
         <input type="text" id="all-expense" disabled className="disabled" />
       </div>
 
@@ -25,7 +27,7 @@ export const FormSplitBill = () => {
         <label htmlFor="select">🤑 Who is paying the bill</label>
         <select id="select">
           <option value="user">You</option>
-          <option value="friend">X</option>
+          <option value="friend"> {selectedFriend.name}</option>
         </select>
       </div>
 

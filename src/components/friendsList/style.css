@@ -22,6 +22,9 @@
   background-color: transparent;
   transition: background-color 0.5s ease-in-out;
 }
+.selected {
+  background-color: #f0cd0a33;
+}
 .list-friend:hover {
   background-color: #f0cd0a33;
 }
