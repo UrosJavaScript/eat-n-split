@@ -1,12 +1,10 @@
-// helpers
-import { INITIAL_FRIENDS } from "../../helpers";
 import { Friend } from "../friend";
 import "./style.css";
 
-export const FriendsList = () => {
+export const FriendsList = ({ friends }) => {
   return (
     <ul className="wrapper-friend-list">
-      {INITIAL_FRIENDS.map((friend) => (
+      {friends.map((friend) => (
         <Friend friend={friend} key={friend.id} />
       ))}
     </ul>
