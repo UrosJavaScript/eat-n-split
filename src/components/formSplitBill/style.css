@@ -1,6 +1,5 @@
 .form-split-bill {
   background-color: #f0cd0a33;
-  height: min-content;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
